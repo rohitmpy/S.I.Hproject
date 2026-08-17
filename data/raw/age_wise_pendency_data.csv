@@ -1,0 +1,4 @@
+date,state,district,age_less_1yr_pct,age_1_3yr_pct,age_3_5yr_pct,age_5_10yr_pct,age_above_10yr_pct,civil_less_1yr_pct,criminal_less_1yr_pct,civil_1_3yr_pct,criminal_1_3yr_pct,civil_3_5yr_pct,criminal_3_5yr_pct,civil_5_10yr_pct,criminal_5_10yr_pct,civil_above_10yr_pct,criminal_above_10yr_pct
+2026-08-14,Uttar Pradesh,Gautam Buddha Nagar,68,10,11,6,5,2,98,9,91,4,96,8,92,3,97
+2026-08-14,Uttar Pradesh,Ghaziabad,46,14,10,17,14,6,94,14,86,8,92,5,95,2,98
+2026-08-14,Uttar Pradesh,Lucknow,72,7,5,8,8,2,98,17,83,13,87,10,90,8,92
