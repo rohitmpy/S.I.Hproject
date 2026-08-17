@@ -1,0 +1,4 @@
+district,sanctioned_judges,working_judges,vacant_posts,support_staff_est,is_estimated,notes
+Gautam Buddha Nagar,26,25,1,130,TRUE,working_judges counted from Allahabad HC officer roster (1 post shown as Secretary/non-judicial); vacancy not officially confirmed
+Ghaziabad,95,92,3,475,TRUE,working_judges counted from eCourts cause-list roster; 3 incharge-only entries treated as vacancies pending confirmation
+Lucknow,159,139,20,795,TRUE,"working_judges = distinct officers after removing duplicate court charges; vacancy is a rough gap estimate, not an official NJDG figure"

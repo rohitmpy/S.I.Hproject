@@ -1,0 +1,4 @@
+date,state,district,civil_pending,criminal_pending,total_pending,instituted_civil,instituted_criminal,instituted_total,disposed_civil,disposed_criminal,disposed_total,listed_civil,listed_criminal,listed_total,undated_civil,undated_criminal,undated_total,excessive_dated_civil,excessive_dated_criminal,excessive_dated_total
+2026-08-14,Uttar Pradesh,Gautam Buddha Nagar,29877,893929,923806,1149,8673,9822,763,4828,5591,932,6158,7090,903,18581,19484,728,96802,97530
+2026-08-14,Uttar Pradesh,Ghaziabad,27640,380460,408100,1222,4468,5690,822,5468,6290,966,5609,6575,2218,67024,69242,371,11044,11415
+2026-08-14,Uttar Pradesh,Lucknow,68385,1299870,1368255,2264,408695,410959,2266,13335,15601,2060,6944,9004,3061,880418,883479,2459,37878,40337
