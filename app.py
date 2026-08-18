@@ -37,7 +37,7 @@ from src.workload.resource_reallocation import build_reallocation_report
 
 from src.priority.priority_score import Case, PriorityListingEngine
 from src.simulator.what_if import Intervention, run_simulation
-
+from src.delay.delay_predictor import predict_delay_risk_band
 
 # ============================================================
 # FASTAPI APP
@@ -56,6 +56,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+         "http://localhost:5174",
+        "http://127.0.0.1:5174"
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -404,4 +406,40 @@ def simulate(req: InterventionIn):
         raise HTTPException(
             status_code=500,
             detail=f"Simulation failed: {str(e)}"
+        )
+        
+        
+        
+        
+class DelayPredictIn(BaseModel):
+    state_code: str
+    dist_code: str
+    court_no: str
+    judge_position: str
+
+    female_defendant: str
+    female_petitioner: str
+    female_adv_def: str
+    female_adv_pet: str
+
+    type_name: str
+    purpose_name: str
+
+    filing_year: int
+    filing_month: int
+    filing_dayofweek: int
+
+
+@app.post("/predict/delay")
+def predict_delay(req: DelayPredictIn):
+
+    try:
+        return predict_delay_risk_band(
+            req.model_dump()
+        )
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Delay prediction failed: {str(e)}"
         )

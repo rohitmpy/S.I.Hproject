@@ -4016,7 +4016,48 @@ export default function NyayaFlowDashboard() {
 
               Workload
             </button>
+                   <button
+                onClick={() =>
+                  setTab("priority")
+                }
+                style={{
+                  display: "flex",
 
+                  alignItems: "center",
+
+                  gap: 6,
+
+                  border:
+                    `1px solid ${T.border}`,
+
+                  background:
+                    tab === "priority"
+                      ? T.brass
+                      : "transparent",
+
+                  color:
+                    tab === "priority"
+                      ? T.ink
+                      : T.slateLight,
+
+                  padding:
+                    "7px 12px",
+
+                  borderRadius: 4,
+
+                  cursor: "pointer",
+
+                  fontSize: 11,
+
+                  fontWeight: 700,
+
+                  ...mono,
+                }}
+              >
+                <Target size={13} />
+
+                Priority Listing
+              </button>
 
             {/* REALLOCATION */}
 
